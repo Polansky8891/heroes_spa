@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const charactersByHero = ({ alter_ego, characters }) => {
+const CharactersByHero = ({ alter_ego, characters }) => {
     return ( alter_ego === characters )
         ? <></>
         : <p>{ characters }</p>
@@ -34,7 +34,7 @@ export const HeroCard = ( {
                         <h5 className="card-title"> { superhero } </h5>
                         <p className="card-text">{ alter_ego } </p>
 
-                        <charactersByHero characters= { characters } alter_ego={ alter_ego} />
+                        <CharactersByHero characters= { characters } alter_ego={ alter_ego} />
  
                         <p className="card-text">
                             <small className="text-muted">{ first_appearance }</small>
